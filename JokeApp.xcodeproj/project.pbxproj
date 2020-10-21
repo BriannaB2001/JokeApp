@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A25E2ACC2540807A00A724A6 /* CatFacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25E2ACB2540807A00A724A6 /* CatFacts.storyboard */; };
+		A25E2ACE2540833300A724A6 /* DadJokes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25E2ACD2540833300A724A6 /* DadJokes.storyboard */; };
+		A25E2AD0254083BF00A724A6 /* InspirationalQuote.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25E2ACF254083BF00A724A6 /* InspirationalQuote.storyboard */; };
+		A25E2AD22540845100A724A6 /* LifeAdvice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25E2AD12540845100A724A6 /* LifeAdvice.storyboard */; };
 		DA3202C8253F356A00E73A12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3202C7253F356A00E73A12 /* AppDelegate.swift */; };
 		DA3202CA253F356A00E73A12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3202C9253F356A00E73A12 /* SceneDelegate.swift */; };
 		DA3202CC253F356A00E73A12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3202CB253F356A00E73A12 /* ViewController.swift */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A25E2ACB2540807A00A724A6 /* CatFacts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CatFacts.storyboard; sourceTree = "<group>"; };
+		A25E2ACD2540833300A724A6 /* DadJokes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DadJokes.storyboard; sourceTree = "<group>"; };
+		A25E2ACF254083BF00A724A6 /* InspirationalQuote.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InspirationalQuote.storyboard; sourceTree = "<group>"; };
+		A25E2AD12540845100A724A6 /* LifeAdvice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LifeAdvice.storyboard; sourceTree = "<group>"; };
 		DA3202C4253F356A00E73A12 /* JokeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JokeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA3202C7253F356A00E73A12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA3202C9253F356A00E73A12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +70,10 @@
 				DA3202C9253F356A00E73A12 /* SceneDelegate.swift */,
 				DA3202CB253F356A00E73A12 /* ViewController.swift */,
 				DA3202CD253F356A00E73A12 /* Main.storyboard */,
+				A25E2AD12540845100A724A6 /* LifeAdvice.storyboard */,
+				A25E2ACF254083BF00A724A6 /* InspirationalQuote.storyboard */,
+				A25E2ACB2540807A00A724A6 /* CatFacts.storyboard */,
+				A25E2ACD2540833300A724A6 /* DadJokes.storyboard */,
 				DA3202D3253F356D00E73A12 /* Assets.xcassets */,
 				DA3202D5253F356D00E73A12 /* LaunchScreen.storyboard */,
 				DA3202D8253F356D00E73A12 /* Info.plist */,
@@ -128,6 +140,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA3202D7253F356D00E73A12 /* LaunchScreen.storyboard in Resources */,
+				A25E2AD0254083BF00A724A6 /* InspirationalQuote.storyboard in Resources */,
+				A25E2AD22540845100A724A6 /* LifeAdvice.storyboard in Resources */,
+				A25E2ACE2540833300A724A6 /* DadJokes.storyboard in Resources */,
+				A25E2ACC2540807A00A724A6 /* CatFacts.storyboard in Resources */,
 				DA3202D4253F356D00E73A12 /* Assets.xcassets in Resources */,
 				DA3202CF253F356A00E73A12 /* Main.storyboard in Resources */,
 			);
@@ -293,6 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FJC36V2HHJ;
 				INFOPLIST_FILE = JokeApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +329,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FJC36V2HHJ;
 				INFOPLIST_FILE = JokeApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
