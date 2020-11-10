@@ -14,11 +14,12 @@ class CatFactsViewController: UIViewController {
     
     @IBOutlet weak var catFactButton: UIButton!
     @IBOutlet weak var catFactLabel: UILabel!
+    @IBOutlet weak var saveFactButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        CatFactsURLController.fetchItems { (results) in
+        CatFactsURLController.fetchCatItems { (results) in
             if let results = results {
                 self.catFacts = results
             }
@@ -37,6 +38,11 @@ class CatFactsViewController: UIViewController {
     @IBAction func catFactButtonTapped(_ sender: UIButton) {
         displayResult(result: catFacts[catFactIndex])
         catFactIndex += 1
+    }
+    
+    @IBAction func saveFactButtonTapped(_ sender: UIButton) {
+        saveFactButton.isSelected = !saveFactButton.isSelected
+
     }
     
 }

@@ -1,17 +1,17 @@
 //
-//  CatFactsURLController.swift
+//  LifeAdviceURLController.swift
 //  JokeApp
 //
-//  Created by Brianna Babcock on 10/22/20.
+//  Created by Brianna Babcock on 10/28/20.
 //
 
 import Foundation
 
-class CatFactsURLController {
+class LifeAdviceURLController {
     
-    static func fetchCatItems(completion: @escaping ([CatFact]?) -> Void) {
+    static func fetchAdviceItems(completion: @escaping (String?) -> Void) {
         
-        let url = URL(string: "https://cat-fact.herokuapp.com/facts")!
+        let url = URL(string: "https://api.adviceslip.com/advice")!
         
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             
@@ -21,8 +21,8 @@ class CatFactsURLController {
                 
                 if let data = data
                 {
-                    let catFactInfo = try jsonDecoder.decode(CatFacts.self, from: data)
-                    completion(catFactInfo.all)
+                    let randomAdviceInfo = try jsonDecoder.decode(AdviceSlip.self, from: data)
+                    completion(randomAdviceInfo.advice.text)
                 } else {
                     completion(nil)
                 }
@@ -31,6 +31,7 @@ class CatFactsURLController {
                 
             }
         }
+        
         task.resume()
     }
 }
