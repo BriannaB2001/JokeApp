@@ -11,13 +11,22 @@
 		A25E2ACE2540833300A724A6 /* DadJokes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25E2ACD2540833300A724A6 /* DadJokes.storyboard */; };
 		A25E2AD0254083BF00A724A6 /* InspirationalQuote.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25E2ACF254083BF00A724A6 /* InspirationalQuote.storyboard */; };
 		A25E2AD22540845100A724A6 /* LifeAdvice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25E2AD12540845100A724A6 /* LifeAdvice.storyboard */; };
+		DA031D7125431E6900224D66 /* CatFactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA031D7025431E6900224D66 /* CatFactsViewController.swift */; };
 		DA3202C8253F356A00E73A12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3202C7253F356A00E73A12 /* AppDelegate.swift */; };
 		DA3202CA253F356A00E73A12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3202C9253F356A00E73A12 /* SceneDelegate.swift */; };
-		DA3202CC253F356A00E73A12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3202CB253F356A00E73A12 /* ViewController.swift */; };
+		DA3202CC253F356A00E73A12 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3202CB253F356A00E73A12 /* HomeViewController.swift */; };
 		DA3202CF253F356A00E73A12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3202CD253F356A00E73A12 /* Main.storyboard */; };
 		DA3202D2253F356A00E73A12 /* JokeApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA3202D0253F356A00E73A12 /* JokeApp.xcdatamodeld */; };
 		DA3202D4253F356D00E73A12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3202D3253F356D00E73A12 /* Assets.xcassets */; };
 		DA3202D7253F356D00E73A12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3202D5253F356D00E73A12 /* LaunchScreen.storyboard */; };
+		DA481578254C5C230059ADEC /* LifeAdviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA481577254C5C230059ADEC /* LifeAdviceViewController.swift */; };
+		DA73902425408A29004549D5 /* CatFacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73902325408A29004549D5 /* CatFacts.swift */; };
+		DA73902E2541EB09004549D5 /* CatFactsURLController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73902D2541EB09004549D5 /* CatFactsURLController.swift */; };
+		DA8ACF6C25599C8900F1C4BB /* LifeAdviceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8ACF6B25599C8900F1C4BB /* LifeAdviceTableViewController.swift */; };
+		DA8ACF7A255AFC9800F1C4BB /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8ACF79255AFC9800F1C4BB /* CoreDataStack.swift */; };
+		DA8ACF7E255AFEAE00F1C4BB /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8ACF7D255AFEAE00F1C4BB /* CoreDataManager.swift */; };
+		DAB223532549C49F0091100C /* LifeAdvice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB223522549C49F0091100C /* LifeAdvice.swift */; };
+		DAB223562549C80F0091100C /* LifeAdviceURLController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB223552549C80F0091100C /* LifeAdviceURLController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,15 +34,24 @@
 		A25E2ACD2540833300A724A6 /* DadJokes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DadJokes.storyboard; sourceTree = "<group>"; };
 		A25E2ACF254083BF00A724A6 /* InspirationalQuote.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InspirationalQuote.storyboard; sourceTree = "<group>"; };
 		A25E2AD12540845100A724A6 /* LifeAdvice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LifeAdvice.storyboard; sourceTree = "<group>"; };
+		DA031D7025431E6900224D66 /* CatFactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactsViewController.swift; sourceTree = "<group>"; };
 		DA3202C4253F356A00E73A12 /* JokeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JokeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA3202C7253F356A00E73A12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA3202C9253F356A00E73A12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DA3202CB253F356A00E73A12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA3202CB253F356A00E73A12 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DA3202CE253F356A00E73A12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA3202D1253F356A00E73A12 /* JokeApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JokeApp.xcdatamodel; sourceTree = "<group>"; };
 		DA3202D3253F356D00E73A12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA3202D6253F356D00E73A12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA3202D8253F356D00E73A12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA481577254C5C230059ADEC /* LifeAdviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeAdviceViewController.swift; sourceTree = "<group>"; };
+		DA73902325408A29004549D5 /* CatFacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFacts.swift; sourceTree = "<group>"; };
+		DA73902D2541EB09004549D5 /* CatFactsURLController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactsURLController.swift; sourceTree = "<group>"; };
+		DA8ACF6B25599C8900F1C4BB /* LifeAdviceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeAdviceTableViewController.swift; sourceTree = "<group>"; };
+		DA8ACF79255AFC9800F1C4BB /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		DA8ACF7D255AFEAE00F1C4BB /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		DAB223522549C49F0091100C /* LifeAdvice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeAdvice.swift; sourceTree = "<group>"; };
+		DAB223552549C80F0091100C /* LifeAdviceURLController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeAdviceURLController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,18 +86,75 @@
 			children = (
 				DA3202C7253F356A00E73A12 /* AppDelegate.swift */,
 				DA3202C9253F356A00E73A12 /* SceneDelegate.swift */,
-				DA3202CB253F356A00E73A12 /* ViewController.swift */,
-				DA3202CD253F356A00E73A12 /* Main.storyboard */,
+				DA8ACF72255AFB7000F1C4BB /* Data */,
+				DA8ACF75255AFBB300F1C4BB /* CoreData */,
+				DA8ACF76255AFBD400F1C4BB /* UI */,
+				DA8ACF74255AFB9B00F1C4BB /* Misc */,
+			);
+			path = JokeApp;
+			sourceTree = "<group>";
+		};
+		DA8ACF6E255AFB3F00F1C4BB /* LifeAdvice */ = {
+			isa = PBXGroup;
+			children = (
 				A25E2AD12540845100A724A6 /* LifeAdvice.storyboard */,
-				A25E2ACF254083BF00A724A6 /* InspirationalQuote.storyboard */,
+				DA8ACF6B25599C8900F1C4BB /* LifeAdviceTableViewController.swift */,
+				DA481577254C5C230059ADEC /* LifeAdviceViewController.swift */,
+				DAB223552549C80F0091100C /* LifeAdviceURLController.swift */,
+			);
+			path = LifeAdvice;
+			sourceTree = "<group>";
+		};
+		DA8ACF70255AFB5700F1C4BB /* CatFacts */ = {
+			isa = PBXGroup;
+			children = (
 				A25E2ACB2540807A00A724A6 /* CatFacts.storyboard */,
-				A25E2ACD2540833300A724A6 /* DadJokes.storyboard */,
+				DA031D7025431E6900224D66 /* CatFactsViewController.swift */,
+				DA73902D2541EB09004549D5 /* CatFactsURLController.swift */,
+			);
+			path = CatFacts;
+			sourceTree = "<group>";
+		};
+		DA8ACF72255AFB7000F1C4BB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DAB223522549C49F0091100C /* LifeAdvice.swift */,
+				DA73902325408A29004549D5 /* CatFacts.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		DA8ACF74255AFB9B00F1C4BB /* Misc */ = {
+			isa = PBXGroup;
+			children = (
 				DA3202D3253F356D00E73A12 /* Assets.xcassets */,
 				DA3202D5253F356D00E73A12 /* LaunchScreen.storyboard */,
 				DA3202D8253F356D00E73A12 /* Info.plist */,
-				DA3202D0253F356A00E73A12 /* JokeApp.xcdatamodeld */,
 			);
-			path = JokeApp;
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		DA8ACF75255AFBB300F1C4BB /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				DA3202D0253F356A00E73A12 /* JokeApp.xcdatamodeld */,
+				DA8ACF79255AFC9800F1C4BB /* CoreDataStack.swift */,
+				DA8ACF7D255AFEAE00F1C4BB /* CoreDataManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		DA8ACF76255AFBD400F1C4BB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A25E2ACD2540833300A724A6 /* DadJokes.storyboard */,
+				A25E2ACF254083BF00A724A6 /* InspirationalQuote.storyboard */,
+				DA3202CD253F356A00E73A12 /* Main.storyboard */,
+				DA3202CB253F356A00E73A12 /* HomeViewController.swift */,
+				DA8ACF6E255AFB3F00F1C4BB /* LifeAdvice */,
+				DA8ACF70255AFB5700F1C4BB /* CatFacts */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,10 +231,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA3202CC253F356A00E73A12 /* ViewController.swift in Sources */,
+				DA3202CC253F356A00E73A12 /* HomeViewController.swift in Sources */,
 				DA3202C8253F356A00E73A12 /* AppDelegate.swift in Sources */,
+				DA73902425408A29004549D5 /* CatFacts.swift in Sources */,
+				DA8ACF7A255AFC9800F1C4BB /* CoreDataStack.swift in Sources */,
+				DAB223562549C80F0091100C /* LifeAdviceURLController.swift in Sources */,
+				DA8ACF6C25599C8900F1C4BB /* LifeAdviceTableViewController.swift in Sources */,
 				DA3202D2253F356A00E73A12 /* JokeApp.xcdatamodeld in Sources */,
+				DA8ACF7E255AFEAE00F1C4BB /* CoreDataManager.swift in Sources */,
+				DA031D7125431E6900224D66 /* CatFactsViewController.swift in Sources */,
+				DA73902E2541EB09004549D5 /* CatFactsURLController.swift in Sources */,
 				DA3202CA253F356A00E73A12 /* SceneDelegate.swift in Sources */,
+				DA481578254C5C230059ADEC /* LifeAdviceViewController.swift in Sources */,
+				DAB223532549C49F0091100C /* LifeAdvice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,7 +392,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FJC36V2HHJ;
-				INFOPLIST_FILE = JokeApp/Info.plist;
+				INFOPLIST_FILE = JokeApp/Misc/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -328,7 +412,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FJC36V2HHJ;
-				INFOPLIST_FILE = JokeApp/Info.plist;
+				INFOPLIST_FILE = JokeApp/Misc/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
