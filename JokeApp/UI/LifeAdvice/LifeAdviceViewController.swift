@@ -41,7 +41,11 @@ class LifeAdviceViewController: UIViewController {
     }
     
     @IBAction func saveAdviceButtonTapped(_ sender: UIButton) {
+        guard let adviceItem = adviceItem else {return}
+        CoreDataManager.shared.createNewEntry(text: adviceItem, type: .advice)
+        
         saveAdviceButton.isSelected = !saveAdviceButton.isSelected
+    
         
     }
 }

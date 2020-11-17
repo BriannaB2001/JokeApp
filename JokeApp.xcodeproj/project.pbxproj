@@ -22,11 +22,12 @@
 		DA481578254C5C230059ADEC /* LifeAdviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA481577254C5C230059ADEC /* LifeAdviceViewController.swift */; };
 		DA73902425408A29004549D5 /* CatFacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73902325408A29004549D5 /* CatFacts.swift */; };
 		DA73902E2541EB09004549D5 /* CatFactsURLController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73902D2541EB09004549D5 /* CatFactsURLController.swift */; };
-		DA8ACF6C25599C8900F1C4BB /* LifeAdviceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8ACF6B25599C8900F1C4BB /* LifeAdviceTableViewController.swift */; };
+		DA8ACF6C25599C8900F1C4BB /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8ACF6B25599C8900F1C4BB /* FavoritesTableViewController.swift */; };
 		DA8ACF7A255AFC9800F1C4BB /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8ACF79255AFC9800F1C4BB /* CoreDataStack.swift */; };
 		DA8ACF7E255AFEAE00F1C4BB /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8ACF7D255AFEAE00F1C4BB /* CoreDataManager.swift */; };
 		DAB223532549C49F0091100C /* LifeAdvice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB223522549C49F0091100C /* LifeAdvice.swift */; };
 		DAB223562549C80F0091100C /* LifeAdviceURLController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB223552549C80F0091100C /* LifeAdviceURLController.swift */; };
+		DAC4371C25643D4D00F07A8D /* FavoritesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC4371B25643D4D00F07A8D /* FavoritesViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,11 +48,12 @@
 		DA481577254C5C230059ADEC /* LifeAdviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeAdviceViewController.swift; sourceTree = "<group>"; };
 		DA73902325408A29004549D5 /* CatFacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFacts.swift; sourceTree = "<group>"; };
 		DA73902D2541EB09004549D5 /* CatFactsURLController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactsURLController.swift; sourceTree = "<group>"; };
-		DA8ACF6B25599C8900F1C4BB /* LifeAdviceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeAdviceTableViewController.swift; sourceTree = "<group>"; };
+		DA8ACF6B25599C8900F1C4BB /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
 		DA8ACF79255AFC9800F1C4BB /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		DA8ACF7D255AFEAE00F1C4BB /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		DAB223522549C49F0091100C /* LifeAdvice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeAdvice.swift; sourceTree = "<group>"; };
 		DAB223552549C80F0091100C /* LifeAdviceURLController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeAdviceURLController.swift; sourceTree = "<group>"; };
+		DAC4371B25643D4D00F07A8D /* FavoritesViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavoritesViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				A25E2AD12540845100A724A6 /* LifeAdvice.storyboard */,
-				DA8ACF6B25599C8900F1C4BB /* LifeAdviceTableViewController.swift */,
 				DA481577254C5C230059ADEC /* LifeAdviceViewController.swift */,
 				DAB223552549C80F0091100C /* LifeAdviceURLController.swift */,
 			);
@@ -151,6 +152,8 @@
 				A25E2ACF254083BF00A724A6 /* InspirationalQuote.storyboard */,
 				DA3202CD253F356A00E73A12 /* Main.storyboard */,
 				DA3202CB253F356A00E73A12 /* HomeViewController.swift */,
+				DAC4371B25643D4D00F07A8D /* FavoritesViewController.storyboard */,
+				DA8ACF6B25599C8900F1C4BB /* FavoritesTableViewController.swift */,
 				DA8ACF6E255AFB3F00F1C4BB /* LifeAdvice */,
 				DA8ACF70255AFB5700F1C4BB /* CatFacts */,
 			);
@@ -215,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA3202D7253F356D00E73A12 /* LaunchScreen.storyboard in Resources */,
+				DAC4371C25643D4D00F07A8D /* FavoritesViewController.storyboard in Resources */,
 				A25E2AD0254083BF00A724A6 /* InspirationalQuote.storyboard in Resources */,
 				A25E2AD22540845100A724A6 /* LifeAdvice.storyboard in Resources */,
 				A25E2ACE2540833300A724A6 /* DadJokes.storyboard in Resources */,
@@ -236,7 +240,7 @@
 				DA73902425408A29004549D5 /* CatFacts.swift in Sources */,
 				DA8ACF7A255AFC9800F1C4BB /* CoreDataStack.swift in Sources */,
 				DAB223562549C80F0091100C /* LifeAdviceURLController.swift in Sources */,
-				DA8ACF6C25599C8900F1C4BB /* LifeAdviceTableViewController.swift in Sources */,
+				DA8ACF6C25599C8900F1C4BB /* FavoritesTableViewController.swift in Sources */,
 				DA3202D2253F356A00E73A12 /* JokeApp.xcdatamodeld in Sources */,
 				DA8ACF7E255AFEAE00F1C4BB /* CoreDataManager.swift in Sources */,
 				DA031D7125431E6900224D66 /* CatFactsViewController.swift in Sources */,

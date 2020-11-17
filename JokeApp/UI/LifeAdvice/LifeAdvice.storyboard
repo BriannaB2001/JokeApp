@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B6j-A1-OVv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B6j-A1-OVv">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -121,11 +121,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="78S-2O-jOi">
-                        <barButtonItem key="rightBarButtonItem" title="Saved Advice" id="3CZ-OG-XPg">
-                            <connections>
-                                <segue destination="ZdJ-0U-jle" kind="show" id="WiD-DH-DK6"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Saved Advice" id="3CZ-OG-XPg"/>
                     </navigationItem>
                     <connections>
                         <outlet property="randomAdviceButton" destination="Haz-wI-jaC" id="IRe-wQ-ACx"/>
@@ -136,44 +132,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dhz-vu-7EO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="999" y="86"/>
-        </scene>
-        <!--Life Advice Table View Controller-->
-        <scene sceneID="Qsj-Pc-foN">
-            <objects>
-                <tableViewController id="ZdJ-0U-jle" customClass="LifeAdviceTableViewController" customModule="JokeApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9zE-xh-xwY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="savedAdviceCell" textLabel="HvU-l1-OeH" style="IBUITableViewCellStyleDefault" id="dAS-4h-WM3">
-                                <rect key="frame" x="0.0" y="28" width="414" height="48.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dAS-4h-WM3" id="hfL-XN-1EG">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="48.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HvU-l1-OeH">
-                                            <rect key="frame" x="20" y="0.0" width="374" height="48.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="ZdJ-0U-jle" id="7Hx-eN-6H9"/>
-                            <outlet property="delegate" destination="ZdJ-0U-jle" id="siW-uY-aiN"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="yyW-AI-poI"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="22J-LO-a15" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1683" y="86"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uN1-Vt-Tg4">
@@ -203,9 +161,6 @@
         <image name="rainbowHeart" width="350" height="350"/>
         <image name="redQuestionMark" width="112" height="140"/>
         <image name="yellowQuestionMark" width="116" height="108.5"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

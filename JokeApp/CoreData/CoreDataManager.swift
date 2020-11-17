@@ -26,6 +26,11 @@ struct CoreDataManager {
         newEntry.creationDate = Date()
         newEntry.text = text
         newEntry.type = type.rawValue
-        
+     
+        stack.saveContext()
+    }
+    
+    func getFetchResultsController(of type: EntryType) -> NSFetchedResultsController<Entry> {
+        fatalError()
     }
 }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eWS-B5-hWZ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="6ZQ-3d-htn">
-                                <rect key="frame" x="0.0" y="81" width="414" height="325"/>
+                                <rect key="frame" x="0.0" y="125" width="414" height="325"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6aS-W6-ftM">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="51"/>
@@ -30,7 +30,7 @@
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="jwS-z2-AFD" kind="presentation" id="Rwt-Sl-biG"/>
+                                            <segue destination="jwS-z2-AFD" kind="show" id="Rwt-Sl-biG"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Pa-t1-Z5L">
@@ -43,7 +43,7 @@
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="9EH-3k-9CD" kind="presentation" id="mx1-yG-WAe"/>
+                                            <segue destination="9EH-3k-9CD" kind="show" id="mx1-yG-WAe"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gc-wt-wWe">
@@ -56,7 +56,7 @@
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="OdY-2X-miB" kind="presentation" id="NjC-iU-CIB"/>
+                                            <segue destination="OdY-2X-miB" kind="show" id="NjC-iU-CIB"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIG-4a-3Dy">
@@ -69,7 +69,7 @@
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="lLM-nZ-lzX" kind="presentation" id="R3Q-Hb-XyG"/>
+                                            <segue destination="lLM-nZ-lzX" kind="show" id="R3Q-Hb-XyG"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -83,45 +83,89 @@
                             <constraint firstItem="6ZQ-3d-htn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vVx-By-UwQ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="8cd-JO-xAS">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="heart.fill" catalog="system" id="tFI-zJ-zEI">
+                            <connections>
+                                <segue destination="Cbt-w7-ion" kind="show" id="vLs-T1-YVj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="80.357142857142847"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="80.357142857142847"/>
+        </scene>
+        <!--FavoritesViewController-->
+        <scene sceneID="bpE-sE-z02">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FavoritesViewController" id="Cbt-w7-ion" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="fny-dU-klm"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oDj-Qm-02r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1688" y="-211"/>
         </scene>
         <!--CatFacts-->
         <scene sceneID="aZo-u0-9R1">
             <objects>
-                <viewControllerPlaceholder storyboardName="CatFacts" id="jwS-z2-AFD" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="CatFacts" id="jwS-z2-AFD" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="OVc-2I-pPr"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0cj-E4-o8u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="801" y="-159"/>
+            <point key="canvasLocation" x="1710.144927536232" y="-159.375"/>
         </scene>
         <!--DadJokes-->
         <scene sceneID="UJ7-qL-ti0">
             <objects>
-                <viewControllerPlaceholder storyboardName="DadJokes" id="9EH-3k-9CD" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="DadJokes" id="9EH-3k-9CD" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="an3-RZ-hqW"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QcZ-En-ZOa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="798" y="-60"/>
+            <point key="canvasLocation" x="1707.2463768115942" y="-60.267857142857139"/>
         </scene>
         <!--InspirationalQuote-->
         <scene sceneID="yIK-ft-HtC">
             <objects>
-                <viewControllerPlaceholder storyboardName="InspirationalQuote" id="OdY-2X-miB" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="InspirationalQuote" id="OdY-2X-miB" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ntt-tm-75j"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wBj-tN-N3s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="805" y="29"/>
+            <point key="canvasLocation" x="1713.7681159420292" y="28.794642857142854"/>
         </scene>
         <!--LifeAdvice-->
         <scene sceneID="84e-NN-KRn">
             <objects>
-                <viewControllerPlaceholder storyboardName="LifeAdvice" id="lLM-nZ-lzX" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="LifeAdvice" id="lLM-nZ-lzX" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="rXj-9o-18u"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="orA-rC-sdP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="803" y="104"/>
+            <point key="canvasLocation" x="1713.0434782608697" y="103.79464285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GuW-am-gdg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eWS-B5-hWZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WX7-uP-NhL">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="JW3-wb-MPq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OGV-yG-qAS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="80.357142857142847"/>
         </scene>
     </scenes>
     <resources>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

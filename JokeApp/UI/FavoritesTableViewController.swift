@@ -1,13 +1,14 @@
 //
-//  LifeAdviceTableViewController.swift
+//  FavoritesTableViewController.swift
 //  JokeApp
 //
 //  Created by Brianna Babcock on 11/9/20.
 //
 
 import UIKit
+import CoreData
 
-class LifeAdviceTableViewController: UITableViewController {
+class FavoritesTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
