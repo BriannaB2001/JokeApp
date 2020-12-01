@@ -42,7 +42,7 @@ class CatFactsViewController: UIViewController {
     
     @IBAction func saveFactButtonTapped(_ sender: UIButton) {
         saveFactButton.isSelected = !saveFactButton.isSelected
-
+        CoreDataManager.shared.createNewEntry(text: catFacts[catFactIndex].text, type: .catFact)
     }
     
 }

@@ -25,7 +25,7 @@ struct CoreDataManager {
         newEntry.id = UUID().uuidString
         newEntry.creationDate = Date()
         newEntry.text = text
-        newEntry.type = type.rawValue
+        newEntry.typeString = type.rawValue
      
         stack.saveContext()
     }

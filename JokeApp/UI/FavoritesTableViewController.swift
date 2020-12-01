@@ -42,20 +42,40 @@ class FavoritesTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return currentTypes.count
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return fetchedResultsController.fetchedObjects?.count ?? 0
+        return entries(section: section).count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "savedAdviceCell", for: indexPath)
-
-        cell.textLabel?.text = "hello"
-
+        let entry = entries(section: indexPath.section)[indexPath.row]
+        cell.textLabel?.text = entry.text
+    
         return cell
     }
     
+    var currentTypes: [EntryType] {
+        let entries = fetchedResultsController.fetchedObjects ?? []
+        let allTypes = entries.compactMap { $0.type }
+        let uniqueTypes = Array(Set(allTypes))
+        return uniqueTypes.sorted(by: {$0.rawValue < $1.rawValue})
+    }
+    
+    func type(for section: Int) -> EntryType {
+        return currentTypes[section]
+    }
+    
+    func entries(section: Int) -> [Entry] {
+        let type = self.type(for: section)
+        let entries = fetchedResultsController.fetchedObjects ?? []
+        let entriesOfType = entries.filter { $0.type == type }
+        return entriesOfType
+    }
 
 }
 

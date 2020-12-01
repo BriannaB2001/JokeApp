@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B6j-A1-OVv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U3F-0J-u38">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="BJd-qP-uSI">
-                                <rect key="frame" x="0.0" y="338" width="411" height="249"/>
+                                <rect key="frame" x="0.0" y="294" width="411" height="293"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Haz-wI-jaC">
-                                        <rect key="frame" x="2" y="0.0" width="407" height="129.5"/>
+                                        <rect key="frame" x="2" y="0.0" width="407" height="173.5"/>
                                         <color key="backgroundColor" systemColor="systemGray2Color"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <size key="titleShadowOffset" width="4" height="0.0"/>
@@ -34,7 +34,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9EP-d4-38y">
-                                        <rect key="frame" x="165.5" y="144.5" width="80" height="39.5"/>
+                                        <rect key="frame" x="165.5" y="188.5" width="80" height="39.5"/>
                                         <color key="backgroundColor" systemColor="systemGray2Color"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -43,7 +43,7 @@
                                         <size key="shadowOffset" width="4" height="-1"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sz2-m7-wz5">
-                                        <rect key="frame" x="180.5" y="199" width="50" height="50"/>
+                                        <rect key="frame" x="180.5" y="243" width="50" height="50"/>
                                         <color key="backgroundColor" systemColor="systemGray2Color"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="J9o-re-G6e"/>
@@ -63,13 +63,13 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redQuestionMark" translatesAutoresizingMaskIntoConstraints="NO" id="g9y-jn-Ac2">
-                                <rect key="frame" x="20" y="126" width="84" height="100"/>
+                                <rect key="frame" x="20" y="82" width="84" height="100"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blueQuestionMark" translatesAutoresizingMaskIntoConstraints="NO" id="A7i-Qf-PTC">
-                                <rect key="frame" x="141" y="214" width="116" height="100"/>
+                                <rect key="frame" x="141" y="170" width="116" height="100"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellowQuestionMark" translatesAutoresizingMaskIntoConstraints="NO" id="hH3-GU-cHX">
-                                <rect key="frame" x="278" y="104" width="116" height="100"/>
+                                <rect key="frame" x="278" y="60" width="116" height="100"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orangeQuestionMark" translatesAutoresizingMaskIntoConstraints="NO" id="iN6-cb-IHe">
                                 <rect key="frame" x="125" y="621" width="100" height="75"/>
@@ -132,24 +132,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dhz-vu-7EO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="999" y="86"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="uN1-Vt-Tg4">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="B6j-A1-OVv" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zQg-PE-8PR">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="U3F-0J-u38" kind="relationship" relationship="rootViewController" id="Mju-Gm-lPw"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rXA-dR-D3n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="287" y="86"/>
         </scene>
     </scenes>
     <resources>
