@@ -30,7 +30,9 @@ struct CoreDataManager {
         stack.saveContext()
     }
     
-    func getFetchResultsController(of type: EntryType) -> NSFetchedResultsController<Entry> {
-        fatalError()
+    func getAllEntries() -> [Entry] {
+        //populate
+        return []
     }
+    
 }

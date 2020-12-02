@@ -31,18 +31,27 @@ class CatFactsViewController: UIViewController {
             DispatchQueue.main.async {
                 
                 self.catFactLabel.text = "\(result.text)"
+                if CoreDataManager.shared.getAllEntries().contains(where: { $0.text == result.text }) {
+                    self.saveFactButton.isSelected = true
+                } else {
+                    self.saveFactButton.isSelected = false
+                }
             }
         }
     }
     
     @IBAction func catFactButtonTapped(_ sender: UIButton) {
+        guard !catFacts.isEmpty else {return}
         displayResult(result: catFacts[catFactIndex])
+
         catFactIndex += 1
     }
     
     @IBAction func saveFactButtonTapped(_ sender: UIButton) {
         saveFactButton.isSelected = !saveFactButton.isSelected
         CoreDataManager.shared.createNewEntry(text: catFacts[catFactIndex].text, type: .catFact)
+        // if favorited then create new entry for it
+        // if unfavorited then remove all entryies with that text
     }
     
 }

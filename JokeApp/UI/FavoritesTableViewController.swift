@@ -10,7 +10,7 @@ import CoreData
 
 class FavoritesTableViewController: UITableViewController {
     
-    fileprivate lazy var fetchedResultsController: NSFetchedResultsController<Entry> = {
+    fileprivate lazy var controller: NSFetchedResultsController<Entry> = {
         // Create Fetch Request
         let fetchRequest: NSFetchRequest<Entry> = Entry.fetchRequest()
         // Configure Fetch Request
@@ -23,13 +23,7 @@ class FavoritesTableViewController: UITableViewController {
     }()
     
     let context = CoreDataStack.shared.context
-   lazy var fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Entry")
-    lazy var controller = {
-        NSFetchedResultsController<NSFetchRequestResult>(fetchRequest: fetchRequest, managedObjectContext: CoreDataStack.shared.context, sectionNameKeyPath: nil, cacheName: nil)
-        
-        
-    }()
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -60,7 +54,7 @@ class FavoritesTableViewController: UITableViewController {
     }
     
     var currentTypes: [EntryType] {
-        let entries = fetchedResultsController.fetchedObjects ?? []
+        let entries = controller.fetchedObjects ?? []
         let allTypes = entries.compactMap { $0.type }
         let uniqueTypes = Array(Set(allTypes))
         return uniqueTypes.sorted(by: {$0.rawValue < $1.rawValue})
@@ -72,7 +66,7 @@ class FavoritesTableViewController: UITableViewController {
     
     func entries(section: Int) -> [Entry] {
         let type = self.type(for: section)
-        let entries = fetchedResultsController.fetchedObjects ?? []
+        let entries = controller.fetchedObjects ?? []
         let entriesOfType = entries.filter { $0.type == type }
         return entriesOfType
     }
@@ -80,5 +74,7 @@ class FavoritesTableViewController: UITableViewController {
 }
 
 extension FavoritesTableViewController: NSFetchedResultsControllerDelegate {
-    
+    func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChangeContentWith snapshot: NSDiffableDataSourceSnapshotReference) {
+        tableView.reloadData()
+    }
 }
