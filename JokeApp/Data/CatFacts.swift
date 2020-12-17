@@ -11,6 +11,6 @@ struct CatFact: Codable {
     var text: String
 }
 
-struct CatFacts: Codable {
-    var all: [CatFact]
-}
+//struct CatFacts: Codable {
+//    var all: [CatFact]
+//}

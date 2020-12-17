@@ -37,21 +37,29 @@ class CatFactsViewController: UIViewController {
                     self.saveFactButton.isSelected = false
                 }
             }
+        } else {
+            DispatchQueue.main.async {
+                self.catFactLabel.text = "no reult"
+            }
         }
     }
     
     @IBAction func catFactButtonTapped(_ sender: UIButton) {
         guard !catFacts.isEmpty else {return}
         displayResult(result: catFacts[catFactIndex])
-
+        
         catFactIndex += 1
     }
     
     @IBAction func saveFactButtonTapped(_ sender: UIButton) {
         saveFactButton.isSelected = !saveFactButton.isSelected
-        CoreDataManager.shared.createNewEntry(text: catFacts[catFactIndex].text, type: .catFact)
-        // if favorited then create new entry for it
-        // if unfavorited then remove all entryies with that text
+        let currentCatFactText = catFacts[catFactIndex].text
+        if let existingEntry =  CoreDataManager.shared.entryForText(text: currentCatFactText ) {
+            catFactButton.isSelected = false
+            // create func in coredata manager to delete entry
+        } else {
+            CoreDataManager.shared.createNewEntry(text: catFacts[catFactIndex].text, type: .catFact)
+            catFactButton.isSelected = true
+        }
     }
-    
 }

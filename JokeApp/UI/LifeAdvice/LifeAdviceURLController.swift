@@ -9,29 +9,23 @@ import Foundation
 
 class LifeAdviceURLController {
     
-    static func fetchAdviceItems(completion: @escaping (String?) -> Void) {
-        
+    static func fetchAdviceItems(completion: @escaping (Advice?) -> Void) {
         let url = URL(string: "https://api.adviceslip.com/advice")!
-        
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             
             let jsonDecoder = JSONDecoder()
             
             do {
-                
-                if let data = data
-                {
+                if let data = data {
                     let randomAdviceInfo = try jsonDecoder.decode(AdviceSlip.self, from: data)
-                    completion(randomAdviceInfo.advice.text)
+                    completion(randomAdviceInfo.advice)
                 } else {
                     completion(nil)
                 }
             } catch {
                 print(error)
-                
             }
         }
-        
         task.resume()
     }
 }

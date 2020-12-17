@@ -13,39 +13,46 @@ class LifeAdviceViewController: UIViewController {
     @IBOutlet weak var randomAdviceLabel: UILabel!
     @IBOutlet weak var saveAdviceButton: UIButton!
     
-    var adviceItem: String?
+    var adviceItem: Advice?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        LifeAdviceURLController.fetchAdviceItems { (results) in
+            if let results = results {
+                self.adviceItem = results
+            }
+        }
     }
     
     func displayResult() {
-        if let adviceItem = adviceItem {
-            DispatchQueue.main.async {
-                
-                self.randomAdviceLabel.text = "\(adviceItem)"
-            }
-        } else {
-            DispatchQueue.main.async {
+        guard let adviceItem = adviceItem else {
             self.randomAdviceLabel.text = "no result"
+            return
+        }
+        
+        self.randomAdviceLabel.text = "\(adviceItem)"
+        
+        if CoreDataManager.shared.getAllEntries().contains(where: { $0.text == adviceItem.text }) {
+            self.saveAdviceButton.isSelected = true
+        } else {
+            self.saveAdviceButton.isSelected = false
         }
     }
-}
+    
     
     @IBAction func randomAdviceButtonTapped(_ sender: Any) {
         LifeAdviceURLController.fetchAdviceItems { (adviceItem) in
             self.adviceItem = adviceItem
-            self.displayResult()
+            DispatchQueue.main.async {
+                self.displayResult()
+            }
         }
     }
-    
     @IBAction func saveAdviceButtonTapped(_ sender: UIButton) {
         guard let adviceItem = adviceItem else {return}
-        CoreDataManager.shared.createNewEntry(text: adviceItem, type: .advice)
+        CoreDataManager.shared.createNewEntry(text: adviceItem.text, type: .advice)
         
         saveAdviceButton.isSelected = !saveAdviceButton.isSelected
-    
-        
     }
 }

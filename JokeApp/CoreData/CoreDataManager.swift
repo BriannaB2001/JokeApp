@@ -31,8 +31,24 @@ struct CoreDataManager {
     }
     
     func getAllEntries() -> [Entry] {
-        //populate
+        var pp: [Entry] = []
+            do {
+                let r = NSFetchRequest<NSFetchRequestResult>(entityName: "Entry")
+                let f = try stack.context.fetch(r)
+                pp = f as! [Entry]
+            } catch let error as NSError {
+                print("woe grabAllPersons \(error)")
+            }
+            for p: Entry in pp {
+                print(" >> \(p.text)")
+            }
         return []
+    }
+    
+    func entryForText(text: String) -> Entry? {
+        // take text and check if entry exists with that text
+        // delete entry
+        return nil
     }
     
 }
