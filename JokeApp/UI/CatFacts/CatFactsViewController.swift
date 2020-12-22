@@ -21,7 +21,7 @@ class CatFactsViewController: UIViewController {
         
         CatFactsURLController.fetchCatItems { (results) in
             if let results = results {
-                self.catFacts = results
+                self.catFacts = results.shuffled()
             }
         }
     }
