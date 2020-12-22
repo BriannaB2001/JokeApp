@@ -51,8 +51,14 @@ class LifeAdviceViewController: UIViewController {
     }
     @IBAction func saveAdviceButtonTapped(_ sender: UIButton) {
         guard let adviceItem = adviceItem else {return}
-        CoreDataManager.shared.createNewEntry(text: adviceItem.text, type: .advice)
         
-        saveAdviceButton.isSelected = !saveAdviceButton.isSelected
+        if let existingEntry =  CoreDataManager.shared.entryForText(text: adviceItem.text) {
+            saveAdviceButton.isSelected = false
+            
+        } else {
+            CoreDataManager.shared.createNewEntry(text: adviceItem.text, type: .advice)
+            saveAdviceButton.isSelected = true
+        }
     }
 }
+

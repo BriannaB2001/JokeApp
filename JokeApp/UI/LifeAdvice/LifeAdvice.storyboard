@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U3F-0J-u38">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U3F-0J-u38">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -120,9 +120,7 @@
                             <constraint firstItem="kPW-I6-ZOe" firstAttribute="bottom" secondItem="iN6-cb-IHe" secondAttribute="bottom" constant="166" id="xHe-Cx-75T"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="78S-2O-jOi">
-                        <barButtonItem key="rightBarButtonItem" title="Saved Advice" id="3CZ-OG-XPg"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="78S-2O-jOi"/>
                     <connections>
                         <outlet property="randomAdviceButton" destination="Haz-wI-jaC" id="IRe-wQ-ACx"/>
                         <outlet property="randomAdviceLabel" destination="9EP-d4-38y" id="4Bf-ML-2en"/>

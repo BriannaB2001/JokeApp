@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r74-jP-SPg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r74-jP-SPg">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -55,6 +55,7 @@
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <state key="selected" image="rainbowHeart"/>
+                                        <state key="highlighted" image="rainbowHeart"/>
                                         <connections>
                                             <action selector="saveFactButtonTapped:" destination="r74-jP-SPg" eventType="touchUpInside" id="q3R-3I-Lex"/>
                                         </connections>
@@ -73,9 +74,7 @@
                             <constraint firstItem="IPb-Ju-iaF" firstAttribute="trailing" secondItem="liG-1h-gup" secondAttribute="trailing" id="Vqz-pN-V6D"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ZVc-zo-YjI">
-                        <barButtonItem key="rightBarButtonItem" title="Saved Facts" id="QrR-QS-NuF"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="ZVc-zo-YjI"/>
                     <connections>
                         <outlet property="catFactButton" destination="hdF-Rs-I9D" id="Ydr-7a-KDQ"/>
                         <outlet property="catFactLabel" destination="QLK-yY-WF6" id="RaV-Ul-H6f"/>

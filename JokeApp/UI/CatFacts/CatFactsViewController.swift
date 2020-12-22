@@ -27,8 +27,8 @@ class CatFactsViewController: UIViewController {
     }
     
     func displayResult(result: CatFact?) {
-        if let result = result {
-            DispatchQueue.main.async {
+        DispatchQueue.main.async {
+            if let result = result {
                 
                 self.catFactLabel.text = "\(result.text)"
                 if CoreDataManager.shared.getAllEntries().contains(where: { $0.text == result.text }) {
@@ -36,30 +36,28 @@ class CatFactsViewController: UIViewController {
                 } else {
                     self.saveFactButton.isSelected = false
                 }
-            }
-        } else {
-            DispatchQueue.main.async {
-                self.catFactLabel.text = "no reult"
+                
+            } else {
+                self.catFactLabel.text = "no result"
             }
         }
     }
     
     @IBAction func catFactButtonTapped(_ sender: UIButton) {
         guard !catFacts.isEmpty else {return}
+        catFactIndex += 1
         displayResult(result: catFacts[catFactIndex])
         
-        catFactIndex += 1
     }
     
     @IBAction func saveFactButtonTapped(_ sender: UIButton) {
-        saveFactButton.isSelected = !saveFactButton.isSelected
         let currentCatFactText = catFacts[catFactIndex].text
         if let existingEntry =  CoreDataManager.shared.entryForText(text: currentCatFactText ) {
-            catFactButton.isSelected = false
-            // create func in coredata manager to delete entry
+            CoreDataManager.shared.deleteEntry(entry: existingEntry)
+            saveFactButton.isSelected = false
         } else {
             CoreDataManager.shared.createNewEntry(text: catFacts[catFactIndex].text, type: .catFact)
-            catFactButton.isSelected = true
+            saveFactButton.isSelected = true
         }
     }
 }

@@ -23,19 +23,19 @@ class FavoritesTableViewController: UITableViewController {
     }()
     
     let context = CoreDataStack.shared.context
-   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         do {
-        try controller.performFetch()
+            try controller.performFetch()
         } catch {
             fatalError("Failed to fetch entities: \(error)")
         }
     }
-
+    
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return currentTypes.count
     }
@@ -43,14 +43,28 @@ class FavoritesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return entries(section: section).count
     }
-
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "savedAdviceCell", for: indexPath)
         let entry = entries(section: indexPath.section)[indexPath.row]
         cell.textLabel?.text = entry.text
-    
+        
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt
+    indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let entry = entries(section: indexPath.section)[indexPath.row]
+            CoreDataManager.shared.deleteEntry(entry: entry)
+            try? controller.performFetch()
+
+        }
     }
     
     var currentTypes: [EntryType] {
@@ -70,7 +84,7 @@ class FavoritesTableViewController: UITableViewController {
         let entriesOfType = entries.filter { $0.type == type }
         return entriesOfType
     }
-
+    
 }
 
 extension FavoritesTableViewController: NSFetchedResultsControllerDelegate {
